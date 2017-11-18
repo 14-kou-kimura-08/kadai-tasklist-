@@ -62,6 +62,6 @@ class TasksController < ApplicationController
   # これは、あくまでメソッド名なので、特に指定はありません
   # ただし、Ruby のメソッド名に先頭大文字を使うことはありません！
   def task_params
-    params.require(:task).permit(:content)
+    params.require(:task).permit(:content, :status)
   end
 end
