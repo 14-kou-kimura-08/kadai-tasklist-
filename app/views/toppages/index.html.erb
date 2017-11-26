@@ -1,5 +1,9 @@
+<% if logged_in? %>
+  <p>ログイン完了ユーザ: <%= current_user.name %></p>
+<% else %>
 <div class="center jumbotron">
   <div class="text-center">
     <h1>Welcome to the TaskList</h1>
   </div>
 </div>
+<% end %>
